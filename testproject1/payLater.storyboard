@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pay Later-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="payLater" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="payLater" customModule="testproject1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payLater" translatesAutoresizingMaskIntoConstraints="NO" id="fso-un-Zrd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="744"/>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upp-Ka-s48">
+                                <rect key="frame" x="20" y="805" width="374" height="46"/>
+                                <color key="backgroundColor" red="0.4201707542" green="0.086086146530000004" blue="0.72220176459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Exo-2o-Rsv"/>
+                                    <constraint firstAttribute="width" constant="374" id="G3w-OC-OoS"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue Shopping">
+                                    <color key="baseBackgroundColor" red="0.4201707542" green="0.086086146530000004" blue="0.72220176459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="continueShoppingBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5qE-dl-vNy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fso-un-Zrd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="J51-Qo-0op"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fso-un-Zrd" secondAttribute="trailing" id="Uvr-an-VdI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Upp-Ka-s48" secondAttribute="trailing" constant="20" id="a7r-Jq-lh8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Upp-Ka-s48" secondAttribute="bottom" constant="11" id="aD1-xD-puS"/>
+                            <constraint firstItem="Upp-Ka-s48" firstAttribute="top" secondItem="fso-un-Zrd" secondAttribute="bottom" constant="17" id="dMu-4n-tW7"/>
+                            <constraint firstItem="Upp-Ka-s48" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ho8-S4-ev4"/>
+                            <constraint firstItem="fso-un-Zrd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="nER-fr-Ktf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continuebtn" destination="Upp-Ka-s48" id="jDZ-In-XmV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="12.723214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="payLater" width="522" height="1015"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4096" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="testproject1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkout" translatesAutoresizingMaskIntoConstraints="NO" id="XGI-LQ-lXE">
+                                <rect key="frame" x="0.0" y="44" width="414" height="764"/>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CL-LA-dFV">
+                                <rect key="frame" x="20" y="797" width="374" height="46"/>
+                                <color key="backgroundColor" red="0.42017075419425964" green="0.086086146533489227" blue="0.72220176458358765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="0hu-Cj-aa2"/>
+                                    <constraint firstAttribute="height" constant="46" id="NaJ-Qv-4yn"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Checkout">
+                                    <color key="baseBackgroundColor" red="0.42017075419425964" green="0.086086146533489227" blue="0.72220176458358765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qb3-MD-7Wz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7CL-LA-dFV" secondAttribute="trailing" constant="20" id="0WF-1M-m3S"/>
+                            <constraint firstItem="7CL-LA-dFV" firstAttribute="top" secondItem="XGI-LQ-lXE" secondAttribute="bottom" constant="-11" id="FWE-V4-8AT"/>
+                            <constraint firstItem="7CL-LA-dFV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GSn-De-6Vi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7CL-LA-dFV" secondAttribute="bottom" constant="19" id="Sfu-gS-Qox"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="XGI-LQ-lXE" secondAttribute="top" id="i1Y-HB-tsR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XGI-LQ-lXE" secondAttribute="trailing" id="imb-2C-3Hh"/>
+                            <constraint firstItem="XGI-LQ-lXE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vAb-7c-UmT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="7CL-LA-dFV" id="veX-FC-I5i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkout" width="390" height="764"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

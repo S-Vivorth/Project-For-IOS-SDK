@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Payment Succeed-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="paymentSucceed" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="paymentSucceed" customModule="testproject1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paymentsucceed" translatesAutoresizingMaskIntoConstraints="NO" id="KBB-Q6-loO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="739"/>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giS-5X-0Al">
+                                <rect key="frame" x="20" y="802" width="374" height="46"/>
+                                <color key="backgroundColor" red="0.4201707542" green="0.086086146530000004" blue="0.72220176459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="HKj-8k-Dbn"/>
+                                    <constraint firstAttribute="height" constant="46" id="Tul-Rk-uuA"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue Shopping">
+                                    <color key="baseBackgroundColor" red="0.4201707542" green="0.086086146530000004" blue="0.72220176459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="continueShoppingBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="feT-lM-b0a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="giS-5X-0Al" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="9Gu-4G-B6M"/>
+                            <constraint firstItem="KBB-Q6-loO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="CRd-Rs-3r1"/>
+                            <constraint firstItem="giS-5X-0Al" firstAttribute="top" secondItem="KBB-Q6-loO" secondAttribute="bottom" constant="19" id="i5J-S0-WGc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KBB-Q6-loO" secondAttribute="trailing" id="iEf-nE-DUm"/>
+                            <constraint firstItem="KBB-Q6-loO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sta-Av-WRS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="giS-5X-0Al" secondAttribute="trailing" constant="20" id="xXp-wB-fTE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="giS-5X-0Al" secondAttribute="bottom" constant="14" id="y26-vc-TTp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contineBtn" destination="giS-5X-0Al" id="fCc-2f-F5p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="12.723214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paymentsucceed" width="470" height="913"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
