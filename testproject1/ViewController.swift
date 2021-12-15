@@ -7,6 +7,7 @@
 
 import UIKit
 import testframe2
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var button: UIButton!
@@ -31,18 +32,18 @@ class ViewController: UIViewController {
 ////        present(viewController, animated: true)
 //////        bottomSheetController().showsheet(views: self.view)
 //    }
-
+    
     
     @IBAction func button(_ sender: Any) {
         
         
-        BottomSheetAnimation().tappedbtn(views: self,sessionID: "JOTS2Bwd201SwxrbdxCS6xP9iQe+yAbrgrAtpEc7Rmo8tczix4RKTfLT92VH8xoxvOQdGhXmyjwHna3qZJwxQEyu8sNYUTJqWceTylBOcLY=", cliendID: "W/GkvceL7nCjOF/v+fu5MA+epIQMXMJedMeXvbvEn7I="){str in
-            self.initPayLater(a: str)
+        BottomSheetAnimation().tappedbtn(views: self,sessionID: "JOTS2Bwd201SwxrbdxCS68nrIPFqRhdCyuj9RbEEmaZX1rOOgEq4lmmr+umMEFmbpRGIwwBOEC3W4D7/+WxP6C4VQwWXvB84HXDf29cU324=", cliendID: "W/GkvceL7nCjOF/v+fu5MA+epIQMXMJedMeXvbvEn7I=",language: "kh"){str in
+            self.initPayLater(dict: str)
         } initPaySuccess: { str1 in
-            self.initSuccess(b: str1)
+            self.initSuccess(dict: str1)
             
         }
-        
+
 //        openApp(appName: "maps")
         
         
@@ -65,24 +66,26 @@ class ViewController: UIViewController {
 //        button.addTarget(self, action: #selector(BottomSheetAnimation().tappedbtn), for: .touchUpInside)
         
     }
-    func initSuccess(b:String?)
+    func initSuccess(dict:[String:Any])
     {      
             let bundle = Bundle(for: type(of: self))
             let storyboard = UIStoryboard(name: "paymentSucceed", bundle: bundle)
-            let vc = storyboard.instantiateViewController(withIdentifier: "paymentSucceed")
+        let vc:paymentSucceed = storyboard.instantiateViewController(withIdentifier: "paymentSucceed") as! paymentSucceed
+        vc.payment_details = dict
             self.present(vc, animated: true, completion: nil)
         
-            print("Pay Later screen is opened + string \(b)")
+            print("Pay Later screen is opened + string \(dict)")
 
            }
-    func initPayLater( a:String?){
+    func initPayLater( dict:[String:Any]){
             
             let bundle = Bundle(for: type(of: self))
             let storyboard = UIStoryboard(name: "payLater", bundle: bundle)
-            let vc = storyboard.instantiateViewController(withIdentifier: "payLater")
+        let vc:payLater = storyboard.instantiateViewController(withIdentifier: "payLater") as! payLater
+        vc.orderDetails = dict
             self.present(vc, animated: true, completion: nil)
-        
-            print("Pay Later screen is opened + string \(a)")
+            
+            print("Pay Later screen is opened + string \(dict)")
     
 
     }

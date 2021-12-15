@@ -2,21 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>INIntentsSupported</key>
+	<array>
+		<string>Intent</string>
+	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
-		<key>NSAllowsArbitraryLoadsInWebContent</key>
-		<true/>
 		<key>NSAllowsArbitraryLoadsForMedia</key>
 		<true/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+		<key>NSAllowsArbitraryLoadsUsageDescription</key>
+		<dict/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 		<key>NSAllowsLocalNetworkingUsageDescription</key>
 		<dict/>
 		<key>NSExceptionDomains</key>
-		<dict/>
-		<key>NSAllowsArbitraryLoadsUsageDescription</key>
 		<dict/>
 	</dict>
 	<key>UIApplicationSceneManifest</key>
