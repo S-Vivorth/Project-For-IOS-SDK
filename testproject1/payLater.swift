@@ -65,6 +65,7 @@ class payLater: UIViewController , UITableViewDelegate, UITableViewDataSource {
             discount.text = String((item as! NSDictionary).value(forKey: "discount_amount")! as! Double) + "0 USD"
             subTotal.text = String((item as! NSDictionary).value(forKey: "amount")! as! Double) + "0 USD"
         }
+        
         models.append(Model(image: "https://b24-upload.s3.ap-southeast-1.amazonaws.com/bank_brand_logos/acleda.jpg"))
         models.append(Model(image: "https://b24-upload.s3.ap-southeast-1.amazonaws.com/bank_brand_logos/acleda.jpg"))
         totalPrice.text =  String(orderDetails["total_amount"] as! Double) + "0 USD"

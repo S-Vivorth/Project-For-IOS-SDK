@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>10</integer>
 		</dict>
 		<key>encoder_decoder (Playground) 10.xcscheme</key>
 		<dict>
@@ -86,7 +86,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>12</integer>
 		</dict>
 		<key>encoder_decoder (Playground) 20.xcscheme</key>
 		<dict>
@@ -163,7 +163,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>14</integer>
 		</dict>
 		<key>encoder_decoder (Playground) 30.xcscheme</key>
 		<dict>
@@ -457,7 +457,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>5</integer>
 		</dict>
 		<key>unicode (Playground) 10.xcscheme</key>
 		<dict>
@@ -534,7 +534,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>7</integer>
 		</dict>
 		<key>unicode (Playground) 20.xcscheme</key>
 		<dict>
@@ -611,7 +611,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>9</integer>
 		</dict>
 		<key>unicode (Playground) 30.xcscheme</key>
 		<dict>

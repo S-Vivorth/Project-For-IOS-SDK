@@ -8,7 +8,9 @@ target 'testproject1' do
 	pod 'GoogleMaps', '5.2.0'
 	pod 'Alamofire', '5.4'
 	pod 'CryptoSwift', '1.4.1'
-	
+	pod 'Starscream', '4.0.0'
+
+
   # Pods for testproject1
 
   target 'testproject1Tests' do

@@ -7,21 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4088134D21EA0B3A79DB4385 /* Pods_testproject1_testproject1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043289AE82BE23FE6ECFFFE9 /* Pods_testproject1_testproject1UITests.framework */; };
-		805E396F74C1AF934F4C1247 /* Pods_testproject1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083C23FD63BF3A87A623F4A0 /* Pods_testproject1.framework */; };
+		478CD454ECA32CC13DE77E0E /* Pods_testproject1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176C76C9B86C7A51EF0C8D15 /* Pods_testproject1.framework */; };
+		B10EC172276AE470008D7531 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10EC16B276AE274008D7531 /* SocketIO.framework */; platformFilter = ios; };
+		B10EC173276AE470008D7531 /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B10EC16B276AE274008D7531 /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B10ED31A2769F05E00631676 /* testframe2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10ED3142769F04200631676 /* testframe2.framework */; };
+		B10ED31B2769F05E00631676 /* testframe2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B10ED3142769F04200631676 /* testframe2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B199477527548C2D008491AD /* paymentSucceed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B199477427548C2D008491AD /* paymentSucceed.storyboard */; };
 		B199477727548C3C008491AD /* paymentSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B199477627548C3C008491AD /* paymentSucceed.swift */; };
-		B1B2C7C52769861D00D003C1 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B2C7C22769858400D003C1 /* SocketIO.framework */; platformFilter = ios; };
-		B1B2C7C62769861D00D003C1 /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1B2C7C22769858400D003C1 /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B1B2C7C72769862100D003C1 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B2C7B72769857700D003C1 /* Starscream.framework */; };
-		B1B2C7C82769862100D003C1 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1B2C7B72769857700D003C1 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B1B35CED27633AE600A2CD43 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B35CEB27633AE600A2CD43 /* MyCollectionViewCell.swift */; };
 		B1B35CEE27633AE600A2CD43 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B35CEC27633AE600A2CD43 /* MyCollectionViewCell.xib */; };
 		B1B35CF127633B2C00A2CD43 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B35CEF27633B2C00A2CD43 /* MyTableViewCell.swift */; };
 		B1B35CF227633B2C00A2CD43 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B35CF027633B2C00A2CD43 /* MyTableViewCell.xib */; };
 		B1BB8BBE275EFF7A00A71C07 /* UIVViewController-SLPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BB8BBD275EFF7900A71C07 /* UIVViewController-SLPopup.swift */; };
-		B1C4B26D2768A63E00693B5B /* testframe2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C4B26C2768A63E00693B5B /* testframe2.framework */; };
-		B1C4B26E2768A63E00693B5B /* testframe2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1C4B26C2768A63E00693B5B /* testframe2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B1C9CCAC275080F10059FCD6 /* payLater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C9CCAB275080F10059FCD6 /* payLater.swift */; };
 		B1C9CCAE275080FF0059FCD6 /* payLater.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C9CCAD275080FF0059FCD6 /* payLater.storyboard */; };
 		B1E0510927324F0400F75E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0510827324F0400F75E87 /* AppDelegate.swift */; };
@@ -33,48 +30,49 @@
 		B1E0512027324F0500F75E87 /* testproject1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0511F27324F0500F75E87 /* testproject1Tests.swift */; };
 		B1E0512A27324F0500F75E87 /* testproject1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0512927324F0500F75E87 /* testproject1UITests.swift */; };
 		B1E0512C27324F0500F75E87 /* testproject1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0512B27324F0500F75E87 /* testproject1UITestsLaunchTests.swift */; };
-		D518DB7DD3CF5B91A52517D0 /* Pods_testproject1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0714E53C6F274D2ED2129AC3 /* Pods_testproject1Tests.framework */; };
+		C3E73AEA073563C802CD6152 /* Pods_testproject1_testproject1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF966CF6B60631E59DC5F561 /* Pods_testproject1_testproject1UITests.framework */; };
+		F5DE3C898C5C294785C28C52 /* Pods_testproject1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C34042A7710EB0463E02DB /* Pods_testproject1Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B1B2C7B62769857700D003C1 /* PBXContainerItemProxy */ = {
+		B10EC16A276AE274008D7531 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B1B2C7B12769857700D003C1 /* Starscream.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 33CCF0921F5DDC030099B092;
-			remoteInfo = Starscream;
-		};
-		B1B2C7B82769857700D003C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1B2C7B12769857700D003C1 /* Starscream.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 335FA2021F5DF71D00F6D2EC;
-			remoteInfo = "Starscream Tests";
-		};
-		B1B2C7C12769858400D003C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1B2C7BC2769858400D003C1 /* Socket.IO-Client-Swift.xcodeproj */;
+			containerPortal = B10EC165276AE274008D7531 /* Socket.IO-Client-Swift.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 572EF2381B51F18A00EEBB58;
 			remoteInfo = SocketIO;
 		};
-		B1B2C7C32769858400D003C1 /* PBXContainerItemProxy */ = {
+		B10EC16C276AE274008D7531 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B1B2C7BC2769858400D003C1 /* Socket.IO-Client-Swift.xcodeproj */;
+			containerPortal = B10EC165276AE274008D7531 /* Socket.IO-Client-Swift.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 572EF2421B51F18A00EEBB58;
 			remoteInfo = "SocketIO-Tests";
 		};
-		B1C4B2742768A67000693B5B /* PBXContainerItemProxy */ = {
+		B10EC179276AE479008D7531 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B1C4B26F2768A67000693B5B /* testframe2.xcodeproj */;
+			containerPortal = B10EC174276AE479008D7531 /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 33CCF0921F5DDC030099B092;
+			remoteInfo = Starscream;
+		};
+		B10EC17B276AE479008D7531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B10EC174276AE479008D7531 /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 335FA2021F5DF71D00F6D2EC;
+			remoteInfo = "Starscream Tests";
+		};
+		B10ED3132769F04200631676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B10ED30E2769F04200631676 /* testframe2.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B1E050A42732441300F75E87;
 			remoteInfo = testframe2;
 		};
-		B1C4B2762768A67000693B5B /* PBXContainerItemProxy */ = {
+		B10ED3152769F04200631676 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B1C4B26F2768A67000693B5B /* testframe2.xcodeproj */;
+			containerPortal = B10ED30E2769F04200631676 /* testframe2.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B1E050AC2732441300F75E87;
 			remoteInfo = testframe2Tests;
@@ -102,9 +100,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B1C4B26E2768A63E00693B5B /* testframe2.framework in Embed Frameworks */,
-				B1B2C7C82769862100D003C1 /* Starscream.framework in Embed Frameworks */,
-				B1B2C7C62769861D00D003C1 /* SocketIO.framework in Embed Frameworks */,
+				B10ED31B2769F05E00631676 /* testframe2.framework in Embed Frameworks */,
+				B10EC173276AE470008D7531 /* SocketIO.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,26 +109,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		043289AE82BE23FE6ECFFFE9 /* Pods_testproject1_testproject1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testproject1_testproject1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0714E53C6F274D2ED2129AC3 /* Pods_testproject1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testproject1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		083C23FD63BF3A87A623F4A0 /* Pods_testproject1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testproject1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		176C76C9B86C7A51EF0C8D15 /* Pods_testproject1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testproject1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C34042A7710EB0463E02DB /* Pods_testproject1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testproject1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D00680C6B846E6C4176296 /* Pods-testproject1-testproject1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1-testproject1UITests.release.xcconfig"; path = "Target Support Files/Pods-testproject1-testproject1UITests/Pods-testproject1-testproject1UITests.release.xcconfig"; sourceTree = "<group>"; };
 		76F23741D5539C9A7EC865DE /* Pods-testproject1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1.release.xcconfig"; path = "Target Support Files/Pods-testproject1/Pods-testproject1.release.xcconfig"; sourceTree = "<group>"; };
 		994E7615E27F489828408506 /* Pods-testproject1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1Tests.release.xcconfig"; path = "Target Support Files/Pods-testproject1Tests/Pods-testproject1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A9200C557499BF41F3C0C789 /* Pods-testproject1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1.debug.xcconfig"; path = "Target Support Files/Pods-testproject1/Pods-testproject1.debug.xcconfig"; sourceTree = "<group>"; };
+		B10EC165276AE274008D7531 /* Socket.IO-Client-Swift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Socket.IO-Client-Swift.xcodeproj"; path = "../../bill24/socket.io-client-swift-master/Socket.IO-Client-Swift.xcodeproj"; sourceTree = "<group>"; };
+		B10EC174276AE479008D7531 /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = "../../bill24/Starscream-master/Starscream.xcodeproj"; sourceTree = "<group>"; };
+		B10ED30E2769F04200631676 /* testframe2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = testframe2.xcodeproj; path = ../../testframe2/testframe2.xcodeproj; sourceTree = "<group>"; };
 		B199477427548C2D008491AD /* paymentSucceed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = paymentSucceed.storyboard; sourceTree = "<group>"; };
 		B199477627548C3C008491AD /* paymentSucceed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentSucceed.swift; sourceTree = "<group>"; };
-		B1B2C7B12769857700D003C1 /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = "../../bill24/Starscream-master/Starscream.xcodeproj"; sourceTree = "<group>"; };
-		B1B2C7BC2769858400D003C1 /* Socket.IO-Client-Swift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Socket.IO-Client-Swift.xcodeproj"; path = "../../bill24/socket.io-client-swift-master/Socket.IO-Client-Swift.xcodeproj"; sourceTree = "<group>"; };
 		B1B35CEB27633AE600A2CD43 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		B1B35CEC27633AE600A2CD43 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		B1B35CEF27633B2C00A2CD43 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		B1B35CF027633B2C00A2CD43 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		B1BB8BBD275EFF7900A71C07 /* UIVViewController-SLPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIVViewController-SLPopup.swift"; path = "../../Custom Popup/Custom Popup/UIVViewController-SLPopup.swift"; sourceTree = "<group>"; };
-		B1C4B1F02768990C00693B5B /* testframe2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = testframe2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1C4B20927689BCC00693B5B /* testframe2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = testframe2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1C4B26C2768A63E00693B5B /* testframe2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = testframe2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1C4B26F2768A67000693B5B /* testframe2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = testframe2.xcodeproj; path = ../../testframe2/testframe2.xcodeproj; sourceTree = "<group>"; };
 		B1C9CCAB275080F10059FCD6 /* payLater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payLater.swift; sourceTree = "<group>"; };
 		B1C9CCAD275080FF0059FCD6 /* payLater.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = payLater.storyboard; sourceTree = "<group>"; };
 		B1E0510527324F0400F75E87 /* testproject1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testproject1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +142,7 @@
 		B1E0512B27324F0500F75E87 /* testproject1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testproject1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D6AD0CD2878F5F3053895D6C /* Pods-testproject1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1Tests.debug.xcconfig"; path = "Target Support Files/Pods-testproject1Tests/Pods-testproject1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC3780166E130D16B732D6F9 /* Pods-testproject1-testproject1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1-testproject1UITests.debug.xcconfig"; path = "Target Support Files/Pods-testproject1-testproject1UITests/Pods-testproject1-testproject1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF966CF6B60631E59DC5F561 /* Pods_testproject1_testproject1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testproject1_testproject1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,10 +150,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1B2C7C52769861D00D003C1 /* SocketIO.framework in Frameworks */,
-				B1B2C7C72769862100D003C1 /* Starscream.framework in Frameworks */,
-				805E396F74C1AF934F4C1247 /* Pods_testproject1.framework in Frameworks */,
-				B1C4B26D2768A63E00693B5B /* testframe2.framework in Frameworks */,
+				B10EC172276AE470008D7531 /* SocketIO.framework in Frameworks */,
+				B10ED31A2769F05E00631676 /* testframe2.framework in Frameworks */,
+				478CD454ECA32CC13DE77E0E /* Pods_testproject1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D518DB7DD3CF5B91A52517D0 /* Pods_testproject1Tests.framework in Frameworks */,
+				F5DE3C898C5C294785C28C52 /* Pods_testproject1Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4088134D21EA0B3A79DB4385 /* Pods_testproject1_testproject1UITests.framework in Frameworks */,
+				C3E73AEA073563C802CD6152 /* Pods_testproject1_testproject1UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,12 +178,9 @@
 		25A4A7FCE9153C73617ECC7D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B1C4B26C2768A63E00693B5B /* testframe2.framework */,
-				B1C4B20927689BCC00693B5B /* testframe2.framework */,
-				B1C4B1F02768990C00693B5B /* testframe2.framework */,
-				083C23FD63BF3A87A623F4A0 /* Pods_testproject1.framework */,
-				043289AE82BE23FE6ECFFFE9 /* Pods_testproject1_testproject1UITests.framework */,
-				0714E53C6F274D2ED2129AC3 /* Pods_testproject1Tests.framework */,
+				176C76C9B86C7A51EF0C8D15 /* Pods_testproject1.framework */,
+				FF966CF6B60631E59DC5F561 /* Pods_testproject1_testproject1UITests.framework */,
+				29C34042A7710EB0463E02DB /* Pods_testproject1Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,29 +198,29 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B1B2C7B22769857700D003C1 /* Products */ = {
+		B10EC166276AE274008D7531 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B1B2C7B72769857700D003C1 /* Starscream.framework */,
-				B1B2C7B92769857700D003C1 /* Starscream Tests.xctest */,
+				B10EC16B276AE274008D7531 /* SocketIO.framework */,
+				B10EC16D276AE274008D7531 /* SocketIO-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B1B2C7BD2769858400D003C1 /* Products */ = {
+		B10EC175276AE479008D7531 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B1B2C7C22769858400D003C1 /* SocketIO.framework */,
-				B1B2C7C42769858400D003C1 /* SocketIO-Tests.xctest */,
+				B10EC17A276AE479008D7531 /* Starscream.framework */,
+				B10EC17C276AE479008D7531 /* Starscream Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B1C4B2702768A67000693B5B /* Products */ = {
+		B10ED30F2769F04200631676 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B1C4B2752768A67000693B5B /* testframe2.framework */,
-				B1C4B2772768A67000693B5B /* testframe2Tests.xctest */,
+				B10ED3142769F04200631676 /* testframe2.framework */,
+				B10ED3162769F04200631676 /* testframe2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,9 +250,9 @@
 		B1E0510727324F0400F75E87 /* testproject1 */ = {
 			isa = PBXGroup;
 			children = (
-				B1B2C7BC2769858400D003C1 /* Socket.IO-Client-Swift.xcodeproj */,
-				B1B2C7B12769857700D003C1 /* Starscream.xcodeproj */,
-				B1C4B26F2768A67000693B5B /* testframe2.xcodeproj */,
+				B10EC174276AE479008D7531 /* Starscream.xcodeproj */,
+				B10EC165276AE274008D7531 /* Socket.IO-Client-Swift.xcodeproj */,
+				B10ED30E2769F04200631676 /* testframe2.xcodeproj */,
 				B1BB8BBD275EFF7900A71C07 /* UIVViewController-SLPopup.swift */,
 				B1E0510827324F0400F75E87 /* AppDelegate.swift */,
 				B1E0510A27324F0400F75E87 /* SceneDelegate.swift */,
@@ -400,16 +390,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B1B2C7BD2769858400D003C1 /* Products */;
-					ProjectRef = B1B2C7BC2769858400D003C1 /* Socket.IO-Client-Swift.xcodeproj */;
+					ProductGroup = B10EC166276AE274008D7531 /* Products */;
+					ProjectRef = B10EC165276AE274008D7531 /* Socket.IO-Client-Swift.xcodeproj */;
 				},
 				{
-					ProductGroup = B1B2C7B22769857700D003C1 /* Products */;
-					ProjectRef = B1B2C7B12769857700D003C1 /* Starscream.xcodeproj */;
+					ProductGroup = B10EC175276AE479008D7531 /* Products */;
+					ProjectRef = B10EC174276AE479008D7531 /* Starscream.xcodeproj */;
 				},
 				{
-					ProductGroup = B1C4B2702768A67000693B5B /* Products */;
-					ProjectRef = B1C4B26F2768A67000693B5B /* testframe2.xcodeproj */;
+					ProductGroup = B10ED30F2769F04200631676 /* Products */;
+					ProjectRef = B10ED30E2769F04200631676 /* testframe2.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -422,46 +412,46 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B1B2C7B72769857700D003C1 /* Starscream.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Starscream.framework;
-			remoteRef = B1B2C7B62769857700D003C1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B1B2C7B92769857700D003C1 /* Starscream Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Starscream Tests.xctest";
-			remoteRef = B1B2C7B82769857700D003C1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B1B2C7C22769858400D003C1 /* SocketIO.framework */ = {
+		B10EC16B276AE274008D7531 /* SocketIO.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SocketIO.framework;
-			remoteRef = B1B2C7C12769858400D003C1 /* PBXContainerItemProxy */;
+			remoteRef = B10EC16A276AE274008D7531 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B1B2C7C42769858400D003C1 /* SocketIO-Tests.xctest */ = {
+		B10EC16D276AE274008D7531 /* SocketIO-Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "SocketIO-Tests.xctest";
-			remoteRef = B1B2C7C32769858400D003C1 /* PBXContainerItemProxy */;
+			remoteRef = B10EC16C276AE274008D7531 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B1C4B2752768A67000693B5B /* testframe2.framework */ = {
+		B10EC17A276AE479008D7531 /* Starscream.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Starscream.framework;
+			remoteRef = B10EC179276AE479008D7531 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B10EC17C276AE479008D7531 /* Starscream Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Starscream Tests.xctest";
+			remoteRef = B10EC17B276AE479008D7531 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B10ED3142769F04200631676 /* testframe2.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = testframe2.framework;
-			remoteRef = B1C4B2742768A67000693B5B /* PBXContainerItemProxy */;
+			remoteRef = B10ED3132769F04200631676 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B1C4B2772768A67000693B5B /* testframe2Tests.xctest */ = {
+		B10ED3162769F04200631676 /* testframe2Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = testframe2Tests.xctest;
-			remoteRef = B1C4B2762768A67000693B5B /* PBXContainerItemProxy */;
+			remoteRef = B10ED3152769F04200631676 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

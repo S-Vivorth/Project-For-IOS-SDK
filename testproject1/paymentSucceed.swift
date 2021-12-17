@@ -37,7 +37,7 @@ class paymentSucceed : UIViewController {
         let parameters = [
             "tran_id": "\(tran_id)"
         ]
-        AF.request("https://checkoutapi-staging.bill24.net/transaction/verify", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers, interceptor: nil, requestModifier: nil).response { responseData in
+        AF.request("https://checkoutapi-demo.bill24.net/transaction/verify", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers, interceptor: nil, requestModifier: nil).response { responseData in
             print("codeee :\(responseData.response?.statusCode)")
             print(String(data: responseData.data!, encoding: .utf8))
             let dict = self.convertToDictionary(text: String(data: responseData.data!, encoding: .utf8)!)!
