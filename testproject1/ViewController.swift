@@ -37,11 +37,12 @@ class ViewController: UIViewController {
     @IBAction func button(_ sender: Any) {
         
         
-        BottomSheetAnimation().tappedbtn(views: self,sessionID: "JOTS2Bwd201SwxrbdxCS68pkVmAMFg0+rYrQQ1gyYIU5oIbQuR0rdDqGnty3LUiN4BXd1ZwKnIfJUhB7/CkVBiudAuKUbOTgSjZjYNhnxlI=", cliendID: "W/GkvceL7nCjOF/v+fu5MA+epIQMXMJedMeXvbvEn7I=",language: "kh"){str in
+        
+        BottomSheetAnimation().tappedbtn(views: self,sessionID: "JOTS2Bwd201SwxrbdxCS6ziFF43yGSzZXO6upiBjyjnqTom1criMXRRHXct/ILciUgnU9MZkSM4wpkNYIiNngLSIASQkZYktt7fjI5KdXMg=", cliendID: "W/GkvceL7nCjOF/v+fu5MA+epIQMXMJedMeXvbvEn7I=",language: "en"){str in
             self.initPayLater(dict: str)
         } initPaySuccess: { str1 in
             self.initSuccess(dict: str1)
-            
+
         }
 
 //        openApp(appName: "maps")

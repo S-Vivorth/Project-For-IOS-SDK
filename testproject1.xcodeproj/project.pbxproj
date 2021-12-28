@@ -115,6 +115,7 @@
 		76F23741D5539C9A7EC865DE /* Pods-testproject1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1.release.xcconfig"; path = "Target Support Files/Pods-testproject1/Pods-testproject1.release.xcconfig"; sourceTree = "<group>"; };
 		994E7615E27F489828408506 /* Pods-testproject1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1Tests.release.xcconfig"; path = "Target Support Files/Pods-testproject1Tests/Pods-testproject1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A9200C557499BF41F3C0C789 /* Pods-testproject1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1.debug.xcconfig"; path = "Target Support Files/Pods-testproject1/Pods-testproject1.debug.xcconfig"; sourceTree = "<group>"; };
+		B102D2DC276C744F00A785A8 /* encoder_decoder.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = encoder_decoder.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B10EC165276AE274008D7531 /* Socket.IO-Client-Swift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Socket.IO-Client-Swift.xcodeproj"; path = "../../bill24/socket.io-client-swift-master/Socket.IO-Client-Swift.xcodeproj"; sourceTree = "<group>"; };
 		B10EC174276AE479008D7531 /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = "../../bill24/Starscream-master/Starscream.xcodeproj"; sourceTree = "<group>"; };
 		B10ED30E2769F04200631676 /* testframe2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = testframe2.xcodeproj; path = ../../testframe2/testframe2.xcodeproj; sourceTree = "<group>"; };
@@ -228,6 +229,7 @@
 		B1E050FC27324F0400F75E87 = {
 			isa = PBXGroup;
 			children = (
+				B102D2DC276C744F00A785A8 /* encoder_decoder.playground */,
 				B1E0510727324F0400F75E87 /* testproject1 */,
 				B1E0511E27324F0500F75E87 /* testproject1Tests */,
 				B1E0512827324F0500F75E87 /* testproject1UITests */,
