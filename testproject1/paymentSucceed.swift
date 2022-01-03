@@ -30,6 +30,7 @@ class paymentSucceed : UIViewController {
             "token" : "f91d077940cf44ebbb1b6abdebce0f0a",
             "Accept": "application/json"
         ]
+        
         print(payment_details!)
         print(type(of: payment_details!))
         let tran_id = (payment_details!["tran_data"] as! [String:Any])["trans_id"] as! String
@@ -40,15 +41,17 @@ class paymentSucceed : UIViewController {
         AF.request("https://checkoutapi-demo.bill24.net/transaction/verify", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers, interceptor: nil, requestModifier: nil).response { responseData in
             print("codeee :\(responseData.response?.statusCode)")
             print(String(data: responseData.data!, encoding: .utf8))
-            let dict = self.convertToDictionary(text: String(data: responseData.data!, encoding: .utf8)!)!
-            self.totalPrice.text = String((dict["data"] as! [String:Any])["total_amount"] as! Double) + " USD"
+            guard let dict = self.convertToDictionary(text: String(data: responseData.data!, encoding: .utf8)!) else{
+                return
+            }
+            self.totalPrice.text = String((dict["data"] as! [String:Any])["total_amount"] as! Double) + "0 USD"
             let date = ((dict["data"] as! [String:Any])["tran_date"] as! String)
             let date_split = date.split(separator: ".")
             self.transactionDate.text = "\(date_split[0])"
-            self.transactionID.text = (dict["data"] as! [String:Any])["tran_id"] as! String
-            self.fee.text = String((dict["data"] as! [String:Any])["fee_amount"] as! Double) + " USD"
+            self.transactionID.text = (dict["data"] as! [String:Any])["bank_reference_no"] as! String
+            self.fee.text = String((dict["data"] as! [String:Any])["fee_amount"] as! Double) + "0 USD"
             self.paymentMethod.text = (self.payment_details["tran_data"] as! [String:Any])["bank_name_en"] as! String
-            self.subTotal.text = String((dict["data"] as! [String:Any])["tran_amount"] as! Double) + " USD"
+            self.subTotal.text = String((dict["data"] as! [String:Any])["tran_amount"] as! Double) + "0 USD"
             self.orderRef.text = "Order #\((self.payment_details["tran_data"] as! [String:Any])["order_ref"] as! String)"
         }
         contineBtn.layer.cornerRadius = 10

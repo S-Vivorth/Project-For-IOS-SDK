@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         
         
         
-        BottomSheetAnimation().tappedbtn(views: self,sessionID: "JOTS2Bwd201SwxrbdxCS6ziFF43yGSzZXO6upiBjyjnqTom1criMXRRHXct/ILciUgnU9MZkSM4wpkNYIiNngLSIASQkZYktt7fjI5KdXMg=", cliendID: "W/GkvceL7nCjOF/v+fu5MA+epIQMXMJedMeXvbvEn7I=",language: "en"){str in
+        BottomSheetAnimation().tappedbtn(views: self,sessionID: "JCvV1v2zSugi+0Glw9Qno5pLlHlAV6mSbkqzluLmqGGfjHadjVZ+B+SPMcwj8UIuLzHnCTXV/kmdAlCZ+FLv37eMh7m4JFAlJoaJg4Ya/Zc=", cliendID: "W/GkvceL7nCjOF/v+fu5MA+epIQMXMJedMeXvbvEn7I=",language: "kh"){str in
             self.initPayLater(dict: str)
         } initPaySuccess: { str1 in
             self.initSuccess(dict: str1)

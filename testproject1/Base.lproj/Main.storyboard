@@ -45,8 +45,8 @@
                             <constraint firstItem="7CL-LA-dFV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GSn-De-6Vi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7CL-LA-dFV" secondAttribute="bottom" constant="19" id="Sfu-gS-Qox"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="XGI-LQ-lXE" secondAttribute="top" id="i1Y-HB-tsR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XGI-LQ-lXE" secondAttribute="trailing" id="imb-2C-3Hh"/>
-                            <constraint firstItem="XGI-LQ-lXE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vAb-7c-UmT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XGI-LQ-lXE" secondAttribute="trailing" id="idU-Xe-rsa"/>
+                            <constraint firstItem="XGI-LQ-lXE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nlT-rW-6m1"/>
                         </constraints>
                     </view>
                     <connections>

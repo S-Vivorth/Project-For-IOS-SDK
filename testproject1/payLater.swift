@@ -56,13 +56,16 @@ class payLater: UIViewController , UITableViewDelegate, UITableViewDataSource {
     override func viewDidAppear(_ animated: Bool) {
         print("orderrr \(orderDetails!)")
         print("Order #\((orderDetails["order_id"] as? String)!)")
-        orderId.text = "Order #\((orderDetails["order_id"] as? String)!)"
+        orderId.text = "Order #\((orderDetails["order_ref"] as? String)!)"
         customerName.text = (orderDetails["customer_info"] as! [String:Any])["customer_name"] as! String
         for item in orderDetails["order_items"] as! NSArray{
             itemName.text =  (item as! NSDictionary).value(forKey: "item_name")! as! String
-            quantity.text = String((item as! NSDictionary).value(forKey: "quantify")! as! Int)
+            quantity.text = String((item as! NSDictionary).value(forKey: "quantity")! as! Int)
             amount.text =  String((item as! NSDictionary).value(forKey: "amount")! as! Double) + "0 USD"
-            discount.text = String((item as! NSDictionary).value(forKey: "discount_amount")! as! Double) + "0 USD"
+            if String((item as! NSDictionary).value(forKey: "discount_amount")! as! Double) != "0.0" {
+                discount.text = String((item as! NSDictionary).value(forKey: "discount_amount")! as! Double) + "0 USD"
+            }
+            
             subTotal.text = String((item as! NSDictionary).value(forKey: "amount")! as! Double) + "0 USD"
         }
         
