@@ -22,10 +22,14 @@ class paymentSucceed : UIViewController {
         let bundle = Bundle(for: type(of: self)) //important => if not inclue this => it cannot load the xib file
         let storyboard = UIStoryboard(name: "Main", bundle: bundle)
         let vc = storyboard.instantiateViewController(withIdentifier: "ViewController")
-        present(vc, animated: true, completion: nil)
+        // need to use dismiss, otherwise will face issue with redirection.
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: {})
+//        present(vc, animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.definesPresentationContext = true
+
         let headers: HTTPHeaders = [
             "token" : "f91d077940cf44ebbb1b6abdebce0f0a",
             "Accept": "application/json"
@@ -38,7 +42,7 @@ class paymentSucceed : UIViewController {
         let parameters = [
             "tran_id": "\(tran_id)"
         ]
-        AF.request("https://checkoutapi-demo.bill24.net/transaction/verify", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers, interceptor: nil, requestModifier: nil).response { responseData in
+        AF.request("https://checkoutapi-staging.bill24.net/transaction/verify", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers, interceptor: nil, requestModifier: nil).response { responseData in
             print("codeee :\(responseData.response?.statusCode)")
             print(String(data: responseData.data!, encoding: .utf8))
             guard let dict = self.convertToDictionary(text: String(data: responseData.data!, encoding: .utf8)!) else{
