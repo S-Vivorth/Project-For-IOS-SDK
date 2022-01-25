@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+    
         if orderRefEditText.text != "" {
             orderRefEditText.layer.borderWidth = 0
             orderRefEditText.layer.borderColor = UIColor.clear.cgColor
