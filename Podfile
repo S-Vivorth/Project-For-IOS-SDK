@@ -7,6 +7,7 @@ target 'testproject1' do
   use_frameworks!
 	pod 'Alamofire', '5.4'
 	pod 'CryptoSwift', '1.4.1'
+	pod 'Socket.IO-Client-Swift'
 
 
   # Pods for testproject1

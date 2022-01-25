@@ -14,31 +14,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var switchLanguage: UISwitch!
     @IBOutlet weak var orderRefEditText: UITextField!
     var orderRef:String!
+    
+    // language must be either "en" or "kh" only
     var language:String = "kh"
-
     
+    // environment must be either "uat" or "prod" only
+    let environment:String = "prod"
     
-    let data = "hello"
+    // clientId can be obtained from bill24
+    let clientId:String = "W/GkvceL7nCjOF/v+fu5MA+epIQMXMJedMeXvbvEn7I="
     
-//    @IBAction func buttonclick(_ sender: Any) {
-//
-//        BottomSheetAnimation().showsheet()
-//
-//
-////        let transitioningDelegate = BottomSheetTransitioningDelegate(
-////            contentHeights: [.bottomSheetAutomatic, UIScreen.main.bounds.size.height-200],
-////            startTargetIndex: 1  )
-////        let frameworkBundle = Bundle(identifier: "bill24.testframe2")
-////
-////        let viewController = bottomSheetController(nibName: "bottomSheetController", bundle: frameworkBundle)
-////        viewController.transitioningDelegate = transitioningDelegate
-////        viewController.modalPresentationStyle = .custom
-////
-////        present(viewController, animated: true)
-//////        bottomSheetController().showsheet(views: self.view)
-//    }
-    
-
+    // this url can be obtained from bill24
+    let url:String = "https://checkoutapi-demo.bill24.net"
     func textFieldDidChangeSelection(_ textField: UITextField) {
         if orderRefEditText.text != "" {
             orderRefEditText.layer.borderWidth = 0
@@ -59,17 +46,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
             orderRefEditText.layer.borderColor = UIColor.clear.cgColor
         }
     }
+    //call Sdk when checkout button is clicked
     @IBAction func button(_ sender: Any) {
+        
+        callSdk()
+    }
+
+    func callSdk() {
         if orderRefEditText.text == "" {
             orderRefEditText.layer.borderWidth = 2
             orderRefEditText.layer.borderColor = UIColor.red.cgColor
             orderRefEditText.becomeFirstResponder()
             return
         }
-        
-        
         orderRef = orderRefEditText.text
         
+        // to create sessionId
         let parameters =
             [
                     "customer": [
@@ -86,7 +78,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         "address_line_1": "No.01, St.01, Toul Kork"
                     ],
                     "description": "Extra note",
-                    "language": "km",
+                    "language": "kh",
                     "order_items": [
                         [
                             "item_name": "Men T-Shirt",
@@ -113,49 +105,47 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     "payment_cancel_url": "payment/cancel",
                     "continue_shopping_url":  "payment/cancel"
             ] as [String : Any]
+        
+        // use switch to switch the language, just for demonstration purpose
         if switchLanguage.isOn == true {
-            
             language = "kh"
         }
         else{
             language = "en"
         }
         
-        
-        
         let headers: HTTPHeaders = [
             "token" : "f91d077940cf44ebbb1b6abdebce0f0a",
             "Accept": "application/json"
         ]
-        var result:InitOrder!
+        AF.request("\(url)/order/init", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).response {
+                (responseData) in
+            let responded = responseData.data!
+            let dict = self.convertToDictionary(text: String(data: responded, encoding: .utf8)!)
+            guard let session_id = ((dict!["data"] as! [String:Any])["session_id"] as? String) else {
+                return
+            }
+            
+            // controller is current UIViewController
+            // sessionID can be get from checkout api response above
+            // clientID is unique id for biller
+            // language is the string that specify the language. Language can be "en" or "kh" only.
+            // environment is the environment that you want to use
+            // initPayLater is a function that you need to hard coded to open the paylater screen when user chooses to pay later
+            // initSuccess is a function that you need to hard coded to open your payment succeeded screen when the payment is done successfully
+            // we use esacping closure to call these functions
+            // you may refer the sample initPayLater and initSuccess functions in below section
+            
+            BottomSheetAnimation().openSdk(controller: self,sessionID: session_id, cliendID: self.clientId,language: self.language,environment: self.environment){order_details in
+                self.initPayLater(dict: order_details)
+            } initPaySuccess: { order_details in
+                self.initSuccess(dict: order_details)
                 
-                AF.request("https://checkoutapi-staging.bill24.net/order/init", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).response {
-                        (responseData) in
-                    var responded = responseData.data!
-                        print(String(data: responded, encoding: .utf8))
-                    let dict = self.convertToDictionary(text: String(data: responded, encoding: .utf8)!)
-                    guard let session_id = ((dict!["data"] as! [String:Any])["session_id"] as? String) else {
-                        return
-                    }
-                    BottomSheetAnimation().tappedbtn(views: self,sessionID: session_id, cliendID: "W/GkvceL7nCjOF/v+fu5MA+epIQMXMJedMeXvbvEn7I=",language: self.language){str in
-                        self.initPayLater(dict: str)
-                    } initPaySuccess: { str1 in
-                        self.initSuccess(dict: str1)
-
-                    }
-                    
-                }
-
-//        openApp(appName: "maps")
-        
-        
-//        BottomSheetAnimation().showsheet(views: self)
+            }
+        }
     }
+
     
-//    @objc func showsheet(){
-//        BottomSheetAnimation().tappedbtn(views: self)
-//
-//    }
     @objc func hideKeyboard() {
         view.endEditing(true)
     }
@@ -167,39 +157,27 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let tapGesture = UITapGestureRecognizer(target: self,
                          action: #selector(hideKeyboard))
         view.addGestureRecognizer(tapGesture)
-//        let btn = checkOutButton()
-//        view.addSubview(btn)
-//        btn.center = view.center
-    
-    
-//        button.addTarget(self, action: #selector(BottomSheetAnimation().tappedbtn), for: .touchUpInside)
-    
-
-        
     }
+    
+    
     func initSuccess(dict:[String:Any])
-    {      
+    {
+            // dict is dictionary of order details
             let bundle = Bundle(for: type(of: self))
             let storyboard = UIStoryboard(name: "paymentSucceed", bundle: bundle)
-        let vc:paymentSucceed = storyboard.instantiateViewController(withIdentifier: "paymentSucceed") as! paymentSucceed
-        vc.payment_details = dict
+            let vc:paymentSucceed = storyboard.instantiateViewController(withIdentifier: "paymentSucceed") as! paymentSucceed
+            vc.payment_details = dict
             self.present(vc, animated: true, completion: nil)
         
-            print("Pay Later screen is opened + string \(dict)")
-
            }
     
     func initPayLater( dict:[String:Any]){
-            
+            // dict is dictionary of order details
             let bundle = Bundle(for: type(of: self))
             let storyboard = UIStoryboard(name: "payLater", bundle: bundle)
-        let vc:payLater = storyboard.instantiateViewController(withIdentifier: "payLater") as! payLater
-        vc.orderDetails = dict
+            let vc:payLater = storyboard.instantiateViewController(withIdentifier: "payLater") as! payLater
+            vc.orderDetails = dict
             self.present(vc, animated: true, completion: nil)
-            
-            print("Pay Later screen is opened + string \(dict)")
-    
-
     }
     
     func convertToDictionary(text: String) -> [String: Any]? {
