@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D440A42C4B67619D224D37C /* Pods_testproject1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04928A67391660F7E962571E /* Pods_testproject1Tests.framework */; };
+		A9067F741E68ADF69993C49A /* Pods_testproject1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE9B9DA7D080017E0EDE404 /* Pods_testproject1.framework */; };
 		AE7FF495C333B467E01749EF /* Pods_testproject1_testproject1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562F8FDCD601ADB707DE1616 /* Pods_testproject1_testproject1UITests.framework */; };
 		B199477527548C2D008491AD /* paymentSucceed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B199477427548C2D008491AD /* paymentSucceed.storyboard */; };
 		B199477727548C3C008491AD /* paymentSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B199477627548C3C008491AD /* paymentSucceed.swift */; };
@@ -94,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E5098E279FE78100D7EFA9 /* bill24Sdk.framework in Frameworks */,
+				A9067F741E68ADF69993C49A /* Pods_testproject1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
