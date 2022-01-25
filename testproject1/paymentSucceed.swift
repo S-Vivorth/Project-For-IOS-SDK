@@ -35,8 +35,7 @@ class paymentSucceed : UIViewController {
             "Accept": "application/json"
         ]
         
-        print(payment_details!)
-        print(type(of: payment_details!))
+        // payment_details will be initialized during we open the screen
         let tran_id = (payment_details!["tran_data"] as! [String:Any])["trans_id"] as! String
         print(tran_id)
         let parameters = [

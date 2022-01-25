@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import testframe2
+import bill24Sdk
 import Alamofire
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -190,19 +190,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         return nil
     }
-    func openApp(appName:String) {
-        
-        let appScheme = "\(appName)://app"
-        let appUrl = URL(string: appScheme)
-        
-        if UIApplication.shared.canOpenURL(appUrl!) {
-            UIApplication.shared.open(appUrl!)
-        } else {
-            UIApplication.shared.open(URL(string: "calshow://app")!)
-
-        }
-
-    }
+//    func openApp(appName:String) {
+//
+//        let appScheme = "\(appName)://app"
+//        let appUrl = URL(string: appScheme)
+//
+//        if UIApplication.shared.canOpenURL(appUrl!) {
+//            UIApplication.shared.open(appUrl!)
+//        } else {
+//            UIApplication.shared.open(URL(string: "calshow://app")!)
+//
+//        }
+//
+//    }
 
 }
 

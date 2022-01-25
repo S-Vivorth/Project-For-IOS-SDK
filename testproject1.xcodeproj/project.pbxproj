@@ -7,15 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B10ED31A2769F05E00631676 /* testframe2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10ED3142769F04200631676 /* testframe2.framework */; };
-		B10ED31B2769F05E00631676 /* testframe2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B10ED3142769F04200631676 /* testframe2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B199477527548C2D008491AD /* paymentSucceed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B199477427548C2D008491AD /* paymentSucceed.storyboard */; };
 		B199477727548C3C008491AD /* paymentSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B199477627548C3C008491AD /* paymentSucceed.swift */; };
-		B1B35CED27633AE600A2CD43 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B35CEB27633AE600A2CD43 /* MyCollectionViewCell.swift */; };
-		B1B35CEE27633AE600A2CD43 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B35CEC27633AE600A2CD43 /* MyCollectionViewCell.xib */; };
-		B1B35CF127633B2C00A2CD43 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B35CEF27633B2C00A2CD43 /* MyTableViewCell.swift */; };
-		B1B35CF227633B2C00A2CD43 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B35CF027633B2C00A2CD43 /* MyTableViewCell.xib */; };
-		B1BB8BBE275EFF7A00A71C07 /* UIVViewController-SLPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BB8BBD275EFF7900A71C07 /* UIVViewController-SLPopup.swift */; };
 		B1C9CCAC275080F10059FCD6 /* payLater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C9CCAB275080F10059FCD6 /* payLater.swift */; };
 		B1C9CCAE275080FF0059FCD6 /* payLater.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C9CCAD275080FF0059FCD6 /* payLater.storyboard */; };
 		B1E0510927324F0400F75E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0510827324F0400F75E87 /* AppDelegate.swift */; };
@@ -27,23 +20,11 @@
 		B1E0512027324F0500F75E87 /* testproject1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0511F27324F0500F75E87 /* testproject1Tests.swift */; };
 		B1E0512A27324F0500F75E87 /* testproject1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0512927324F0500F75E87 /* testproject1UITests.swift */; };
 		B1E0512C27324F0500F75E87 /* testproject1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0512B27324F0500F75E87 /* testproject1UITestsLaunchTests.swift */; };
+		B1E50938279FA1D500D7EFA9 /* bill24Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E5092E279FA09800D7EFA9 /* bill24Sdk.framework */; };
+		B1E50939279FA1D500D7EFA9 /* bill24Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1E5092E279FA09800D7EFA9 /* bill24Sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B10ED3132769F04200631676 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B10ED30E2769F04200631676 /* testframe2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B1E050A42732441300F75E87;
-			remoteInfo = testframe2;
-		};
-		B10ED3152769F04200631676 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B10ED30E2769F04200631676 /* testframe2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B1E050AC2732441300F75E87;
-			remoteInfo = testframe2Tests;
-		};
 		B1E0511C27324F0500F75E87 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B1E050FD27324F0400F75E87 /* Project object */;
@@ -58,16 +39,30 @@
 			remoteGlobalIDString = B1E0510427324F0400F75E87;
 			remoteInfo = testproject1;
 		};
+		B1E5092D279FA09800D7EFA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1E50928279FA09800D7EFA9 /* bill24Sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B1E050A42732441300F75E87;
+			remoteInfo = bill24Sdk;
+		};
+		B1E5092F279FA09800D7EFA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1E50928279FA09800D7EFA9 /* bill24Sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B1E050AC2732441300F75E87;
+			remoteInfo = bill24SdkTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B1C4B20C27689BCC00693B5B /* Embed Frameworks */ = {
+		B1E5093A279FA1D500D7EFA9 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B10ED31B2769F05E00631676 /* testframe2.framework in Embed Frameworks */,
+				B1E50939279FA1D500D7EFA9 /* bill24Sdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,14 +75,8 @@
 		994E7615E27F489828408506 /* Pods-testproject1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1Tests.release.xcconfig"; path = "Target Support Files/Pods-testproject1Tests/Pods-testproject1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A9200C557499BF41F3C0C789 /* Pods-testproject1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1.debug.xcconfig"; path = "Target Support Files/Pods-testproject1/Pods-testproject1.debug.xcconfig"; sourceTree = "<group>"; };
 		B102D2DC276C744F00A785A8 /* encoder_decoder.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = encoder_decoder.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		B10ED30E2769F04200631676 /* testframe2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = testframe2.xcodeproj; path = ../../testframe2/testframe2.xcodeproj; sourceTree = "<group>"; };
 		B199477427548C2D008491AD /* paymentSucceed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = paymentSucceed.storyboard; sourceTree = "<group>"; };
 		B199477627548C3C008491AD /* paymentSucceed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentSucceed.swift; sourceTree = "<group>"; };
-		B1B35CEB27633AE600A2CD43 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
-		B1B35CEC27633AE600A2CD43 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
-		B1B35CEF27633B2C00A2CD43 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
-		B1B35CF027633B2C00A2CD43 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
-		B1BB8BBD275EFF7900A71C07 /* UIVViewController-SLPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIVViewController-SLPopup.swift"; path = "../../Custom Popup/Custom Popup/UIVViewController-SLPopup.swift"; sourceTree = "<group>"; };
 		B1C9CCAB275080F10059FCD6 /* payLater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payLater.swift; sourceTree = "<group>"; };
 		B1C9CCAD275080FF0059FCD6 /* payLater.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = payLater.storyboard; sourceTree = "<group>"; };
 		B1E0510527324F0400F75E87 /* testproject1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testproject1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +92,7 @@
 		B1E0512527324F0500F75E87 /* testproject1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testproject1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E0512927324F0500F75E87 /* testproject1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testproject1UITests.swift; sourceTree = "<group>"; };
 		B1E0512B27324F0500F75E87 /* testproject1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testproject1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1E50928279FA09800D7EFA9 /* bill24Sdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = bill24Sdk.xcodeproj; path = ../../testframe2/bill24Sdk.xcodeproj; sourceTree = "<group>"; };
 		D6AD0CD2878F5F3053895D6C /* Pods-testproject1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1Tests.debug.xcconfig"; path = "Target Support Files/Pods-testproject1Tests/Pods-testproject1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC3780166E130D16B732D6F9 /* Pods-testproject1-testproject1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1-testproject1UITests.debug.xcconfig"; path = "Target Support Files/Pods-testproject1-testproject1UITests/Pods-testproject1-testproject1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10ED31A2769F05E00631676 /* testframe2.framework in Frameworks */,
+				B1E50938279FA1D500D7EFA9 /* bill24Sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,15 +143,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B10ED30F2769F04200631676 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B10ED3142769F04200631676 /* testframe2.framework */,
-				B10ED3162769F04200631676 /* testframe2Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		B1E050FC27324F0400F75E87 = {
 			isa = PBXGroup;
 			children = (
@@ -188,8 +169,7 @@
 		B1E0510727324F0400F75E87 /* testproject1 */ = {
 			isa = PBXGroup;
 			children = (
-				B10ED30E2769F04200631676 /* testframe2.xcodeproj */,
-				B1BB8BBD275EFF7900A71C07 /* UIVViewController-SLPopup.swift */,
+				B1E50928279FA09800D7EFA9 /* bill24Sdk.xcodeproj */,
 				B1E0510827324F0400F75E87 /* AppDelegate.swift */,
 				B1E0510A27324F0400F75E87 /* SceneDelegate.swift */,
 				B1E0510C27324F0400F75E87 /* ViewController.swift */,
@@ -201,10 +181,6 @@
 				B1C9CCAD275080FF0059FCD6 /* payLater.storyboard */,
 				B199477427548C2D008491AD /* paymentSucceed.storyboard */,
 				B199477627548C3C008491AD /* paymentSucceed.swift */,
-				B1B35CEB27633AE600A2CD43 /* MyCollectionViewCell.swift */,
-				B1B35CEC27633AE600A2CD43 /* MyCollectionViewCell.xib */,
-				B1B35CEF27633B2C00A2CD43 /* MyTableViewCell.swift */,
-				B1B35CF027633B2C00A2CD43 /* MyTableViewCell.xib */,
 			);
 			path = testproject1;
 			sourceTree = "<group>";
@@ -226,6 +202,15 @@
 			path = testproject1UITests;
 			sourceTree = "<group>";
 		};
+		B1E50929279FA09800D7EFA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1E5092E279FA09800D7EFA9 /* bill24Sdk.framework */,
+				B1E50930279FA09800D7EFA9 /* bill24SdkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,8 +222,8 @@
 				B1E0510127324F0400F75E87 /* Sources */,
 				B1E0510227324F0400F75E87 /* Frameworks */,
 				B1E0510327324F0400F75E87 /* Resources */,
-				B1C4B20C27689BCC00693B5B /* Embed Frameworks */,
 				5C0EE0B0A0BA3A4D7448FD5F /* [CP] Embed Pods Frameworks */,
+				B1E5093A279FA1D500D7EFA9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -324,8 +309,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B10ED30F2769F04200631676 /* Products */;
-					ProjectRef = B10ED30E2769F04200631676 /* testframe2.xcodeproj */;
+					ProductGroup = B1E50929279FA09800D7EFA9 /* Products */;
+					ProjectRef = B1E50928279FA09800D7EFA9 /* bill24Sdk.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -338,18 +323,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B10ED3142769F04200631676 /* testframe2.framework */ = {
+		B1E5092E279FA09800D7EFA9 /* bill24Sdk.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = testframe2.framework;
-			remoteRef = B10ED3132769F04200631676 /* PBXContainerItemProxy */;
+			path = bill24Sdk.framework;
+			remoteRef = B1E5092D279FA09800D7EFA9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B10ED3162769F04200631676 /* testframe2Tests.xctest */ = {
+		B1E50930279FA09800D7EFA9 /* bill24SdkTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = testframe2Tests.xctest;
-			remoteRef = B10ED3152769F04200631676 /* PBXContainerItemProxy */;
+			path = bill24SdkTests.xctest;
+			remoteRef = B1E5092F279FA09800D7EFA9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -361,10 +346,8 @@
 			files = (
 				B199477527548C2D008491AD /* paymentSucceed.storyboard in Resources */,
 				B1C9CCAE275080FF0059FCD6 /* payLater.storyboard in Resources */,
-				B1B35CEE27633AE600A2CD43 /* MyCollectionViewCell.xib in Resources */,
 				B1E0511527324F0500F75E87 /* LaunchScreen.storyboard in Resources */,
 				B1E0511227324F0500F75E87 /* Assets.xcassets in Resources */,
-				B1B35CF227633B2C00A2CD43 /* MyTableViewCell.xib in Resources */,
 				B1E0511027324F0400F75E87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,11 +477,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B199477727548C3C008491AD /* paymentSucceed.swift in Sources */,
-				B1B35CF127633B2C00A2CD43 /* MyTableViewCell.swift in Sources */,
-				B1B35CED27633AE600A2CD43 /* MyCollectionViewCell.swift in Sources */,
 				B1E0510D27324F0400F75E87 /* ViewController.swift in Sources */,
 				B1E0510927324F0400F75E87 /* AppDelegate.swift in Sources */,
-				B1BB8BBE275EFF7A00A71C07 /* UIVViewController-SLPopup.swift in Sources */,
 				B1E0510B27324F0400F75E87 /* SceneDelegate.swift in Sources */,
 				B1C9CCAC275080F10059FCD6 /* payLater.swift in Sources */,
 			);
@@ -679,7 +659,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9200C557499BF41F3C0C789 /* Pods-testproject1.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -718,7 +697,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 76F23741D5539C9A7EC865DE /* Pods-testproject1.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
