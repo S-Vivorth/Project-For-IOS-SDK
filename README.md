@@ -21,27 +21,27 @@ Download bill24 sdk from [this link](https://gitlab.bill24.net/Vivorth/ios-sdk-s
 
 Extract the zip and you will get bill24Sdk.framework
 
-![step 2](https://gitlab.bill24.net/Vivorth/ios-sdk-sample-app/-/raw/master/img/Screen%20Shot%202022-01-25%20at%203.29.34%20PM.jpg)
+![step 2](https://github.com/S-Vivorth/Project-For-IOS-SDK/blob/master/img/Screen%20Shot%202022-01-25%20at%203.29.34%20PM.jpg?raw=true)
 
 
 * **Step 3**
 
 Drag bill24sdk.framework into your project.
 
-![step 3](https://gitlab.bill24.net/Vivorth/ios-sdk-sample-app/-/raw/master/img/Screen%20Shot%202022-01-25%20at%203.08.17%20PM.jpg)
+![step 3](https://github.com/S-Vivorth/Project-For-IOS-SDK/blob/master/img/Screen%20Shot%202022-01-25%20at%203.08.17%20PM.jpg?raw=true)
 
 
-![step 3](https://gitlab.bill24.net/Vivorth/ios-sdk-sample-app/-/raw/master/img/Screen%20Shot%202022-01-25%20at%203.44.58%20PM.jpg)
+![step 3](https://github.com/S-Vivorth/Project-For-IOS-SDK/blob/master/img/Screen%20Shot%202022-01-25%20at%203.44.58%20PM.jpg?raw=true)
 
 
 * **Step 4**
 
 Make sure you link framework in frameworks section and link binary with libraries section.
 
-![step 4](https://gitlab.bill24.net/Vivorth/ios-sdk-sample-app/-/raw/master/img/Screen%20Shot%202022-01-25%20at%203.09.02%20PM.jpg)
+![step 4](https://github.com/S-Vivorth/Project-For-IOS-SDK/blob/master/img/Screen%20Shot%202022-01-25%20at%203.09.02%20PM.jpg?raw=true)
 
 
-![step 4](https://gitlab.bill24.net/Vivorth/ios-sdk-sample-app/-/raw/master/img/Screen%20Shot%202022-01-25%20at%203.09.24%20PM.jpg)
+![step 4](https://github.com/S-Vivorth/Project-For-IOS-SDK/blob/master/img/Screen%20Shot%202022-01-25%20at%203.09.24%20PM.jpg?raw=true)
 
 
 * **Step 5**
