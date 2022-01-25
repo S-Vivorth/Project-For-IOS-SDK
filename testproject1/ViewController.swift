@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  testproject1
-//
-//  Created by San Vivorth on 11/3/21.
-//
 
 import UIKit
 import bill24Sdk
@@ -48,7 +42,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     //call Sdk when checkout button is clicked
     @IBAction func button(_ sender: Any) {
-        
         callSdk()
     }
 
