@@ -20,8 +20,8 @@
 		B1E0512027324F0500F75E87 /* testproject1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0511F27324F0500F75E87 /* testproject1Tests.swift */; };
 		B1E0512A27324F0500F75E87 /* testproject1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0512927324F0500F75E87 /* testproject1UITests.swift */; };
 		B1E0512C27324F0500F75E87 /* testproject1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0512B27324F0500F75E87 /* testproject1UITestsLaunchTests.swift */; };
-		B1E50946279FD81A00D7EFA9 /* bill24Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E50943279FD81000D7EFA9 /* bill24Sdk.framework */; };
-		B1E50947279FD81A00D7EFA9 /* bill24Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1E50943279FD81000D7EFA9 /* bill24Sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1E50958279FDDA000D7EFA9 /* bill24Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E50956279FDD9500D7EFA9 /* bill24Sdk.framework */; platformFilter = ios; };
+		B1E50959279FDDA000D7EFA9 /* bill24Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1E50956279FDD9500D7EFA9 /* bill24Sdk.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,30 +39,16 @@
 			remoteGlobalIDString = B1E0510427324F0400F75E87;
 			remoteInfo = testproject1;
 		};
-		B1E50942279FD81000D7EFA9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1E5093D279FD81000D7EFA9 /* bill24Sdk.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B1E050A42732441300F75E87;
-			remoteInfo = bill24Sdk;
-		};
-		B1E50944279FD81000D7EFA9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1E5093D279FD81000D7EFA9 /* bill24Sdk.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B1E050AC2732441300F75E87;
-			remoteInfo = bill24SdkTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B1E50948279FD81A00D7EFA9 /* Embed Frameworks */ = {
+		B1E50954279FDC5D00D7EFA9 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B1E50947279FD81A00D7EFA9 /* bill24Sdk.framework in Embed Frameworks */,
+				B1E50959279FDDA000D7EFA9 /* bill24Sdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,7 +78,7 @@
 		B1E0512527324F0500F75E87 /* testproject1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testproject1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E0512927324F0500F75E87 /* testproject1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testproject1UITests.swift; sourceTree = "<group>"; };
 		B1E0512B27324F0500F75E87 /* testproject1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testproject1UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B1E5093D279FD81000D7EFA9 /* bill24Sdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = bill24Sdk.xcodeproj; path = ../testframe2/bill24Sdk.xcodeproj; sourceTree = "<group>"; };
+		B1E50956279FDD9500D7EFA9 /* bill24Sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = bill24Sdk.framework; sourceTree = "<group>"; };
 		D6AD0CD2878F5F3053895D6C /* Pods-testproject1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1Tests.debug.xcconfig"; path = "Target Support Files/Pods-testproject1Tests/Pods-testproject1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC3780166E130D16B732D6F9 /* Pods-testproject1-testproject1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1-testproject1UITests.debug.xcconfig"; path = "Target Support Files/Pods-testproject1-testproject1UITests/Pods-testproject1-testproject1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1E50946279FD81A00D7EFA9 /* bill24Sdk.framework in Frameworks */,
+				B1E50958279FDDA000D7EFA9 /* bill24Sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,8 +132,8 @@
 		B1E050FC27324F0400F75E87 = {
 			isa = PBXGroup;
 			children = (
+				B1E50956279FDD9500D7EFA9 /* bill24Sdk.framework */,
 				B102D2DC276C744F00A785A8 /* encoder_decoder.playground */,
-				B1E5093D279FD81000D7EFA9 /* bill24Sdk.xcodeproj */,
 				B1E0510727324F0400F75E87 /* testproject1 */,
 				B1E0511E27324F0500F75E87 /* testproject1Tests */,
 				B1E0512827324F0500F75E87 /* testproject1UITests */,
@@ -202,15 +188,6 @@
 			path = testproject1UITests;
 			sourceTree = "<group>";
 		};
-		B1E5093E279FD81000D7EFA9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B1E50943279FD81000D7EFA9 /* bill24Sdk.framework */,
-				B1E50945279FD81000D7EFA9 /* bill24SdkTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,7 +200,7 @@
 				B1E0510227324F0400F75E87 /* Frameworks */,
 				B1E0510327324F0400F75E87 /* Resources */,
 				5C0EE0B0A0BA3A4D7448FD5F /* [CP] Embed Pods Frameworks */,
-				B1E50948279FD81A00D7EFA9 /* Embed Frameworks */,
+				B1E50954279FDC5D00D7EFA9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,12 +284,6 @@
 			mainGroup = B1E050FC27324F0400F75E87;
 			productRefGroup = B1E0510627324F0400F75E87 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = B1E5093E279FD81000D7EFA9 /* Products */;
-					ProjectRef = B1E5093D279FD81000D7EFA9 /* bill24Sdk.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				B1E0510427324F0400F75E87 /* testproject1 */,
@@ -321,23 +292,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		B1E50943279FD81000D7EFA9 /* bill24Sdk.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = bill24Sdk.framework;
-			remoteRef = B1E50942279FD81000D7EFA9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B1E50945279FD81000D7EFA9 /* bill24SdkTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = bill24SdkTests.xctest;
-			remoteRef = B1E50944279FD81000D7EFA9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B1E0510327324F0400F75E87 /* Resources */ = {
@@ -663,6 +617,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 936EARQLW8;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -701,6 +656,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 936EARQLW8;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
