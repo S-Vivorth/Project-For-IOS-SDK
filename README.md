@@ -1,4 +1,4 @@
-# Android Sdk sample app
+# iOS Sdk sample app
 
 > Instructions for the billers to integrate bill24 iOS sdk.
 
