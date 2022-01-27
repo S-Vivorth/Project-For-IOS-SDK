@@ -188,6 +188,37 @@ Where:
 * **initSuccess** is a function that you need to hard coded to open your payment succeeded screen when the payment is done successfully
 * You may also refer our sample initPayLater and initPaySuccess functions.
 
+In payment succeeded screen, to verify transaction you have to:
+
+```swift
+        let headers: HTTPHeaders = [
+            "token" : "f91d077940cf44ebbb1b6abdebce0f0a",
+            "Accept": "application/json"
+        ]
+        
+        // payment_details will be initialized during we open the screen
+        let tran_id = (payment_details!["tran_data"] as! [String:Any])["trans_id"] as! String
+        print(tran_id)
+        let parameters = [
+            "tran_id": "\(tran_id)"
+        ]
+        AF.request("\(url)/transaction/verify", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers, interceptor: nil, requestModifier: nil).response { responseData in
+            print("codeee :\(responseData.response?.statusCode)")
+            print(String(data: responseData.data!, encoding: .utf8))
+            guard let dict = self.convertToDictionary(text: String(data: responseData.data!, encoding: .utf8)!) else{
+                return
+            }
+            self.totalPrice.text = String((dict["data"] as! [String:Any])["total_amount"] as! Double)
+            let date = ((dict["data"] as! [String:Any])["tran_date"] as! String)
+            let date_split = date.split(separator: ".")
+            self.transactionDate.text = "\(date_split[0])"
+            self.transactionID.text = (dict["data"] as! [String:Any])["bank_reference_no"] as! String
+            self.fee.text = String((dict["data"] as! [String:Any])["fee_amount"] as! Double)
+            self.paymentMethod.text = (self.payment_details["tran_data"] as! [String:Any])["bank_name_en"] as! String
+            self.subTotal.text = String((dict["data"] as! [String:Any])["tran_amount"] as! Double)
+            self.orderRef.text = "Order #\((self.payment_details["tran_data"] as! [String:Any])["order_ref"] as! String)"
+```
+
 Congratulations, you are ready to use the SDK.
 
 ## Contact
