@@ -13,6 +13,8 @@
 		B199477727548C3C008491AD /* paymentSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B199477627548C3C008491AD /* paymentSucceed.swift */; };
 		B1C9CCAC275080F10059FCD6 /* payLater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C9CCAB275080F10059FCD6 /* payLater.swift */; };
 		B1C9CCAE275080FF0059FCD6 /* payLater.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C9CCAD275080FF0059FCD6 /* payLater.storyboard */; };
+		B1CD6A3227AB85660043229A /* bill24Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CD6A3027AB85610043229A /* bill24Sdk.framework */; platformFilter = ios; };
+		B1CD6A3327AB85660043229A /* bill24Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1CD6A3027AB85610043229A /* bill24Sdk.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B1E0510927324F0400F75E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0510827324F0400F75E87 /* AppDelegate.swift */; };
 		B1E0510B27324F0400F75E87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0510A27324F0400F75E87 /* SceneDelegate.swift */; };
 		B1E0510D27324F0400F75E87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0510C27324F0400F75E87 /* ViewController.swift */; };
@@ -22,8 +24,6 @@
 		B1E0512027324F0500F75E87 /* testproject1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0511F27324F0500F75E87 /* testproject1Tests.swift */; };
 		B1E0512A27324F0500F75E87 /* testproject1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0512927324F0500F75E87 /* testproject1UITests.swift */; };
 		B1E0512C27324F0500F75E87 /* testproject1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0512B27324F0500F75E87 /* testproject1UITestsLaunchTests.swift */; };
-		B1E5098E279FE78100D7EFA9 /* bill24Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E5098C279FE77A00D7EFA9 /* bill24Sdk.framework */; platformFilter = ios; };
-		B1E5098F279FE78100D7EFA9 /* bill24Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1E5098C279FE77A00D7EFA9 /* bill24Sdk.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B1E5098F279FE78100D7EFA9 /* bill24Sdk.framework in Embed Frameworks */,
+				B1CD6A3327AB85660043229A /* bill24Sdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +69,7 @@
 		B199477627548C3C008491AD /* paymentSucceed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentSucceed.swift; sourceTree = "<group>"; };
 		B1C9CCAB275080F10059FCD6 /* payLater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payLater.swift; sourceTree = "<group>"; };
 		B1C9CCAD275080FF0059FCD6 /* payLater.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = payLater.storyboard; sourceTree = "<group>"; };
+		B1CD6A3027AB85610043229A /* bill24Sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = bill24Sdk.framework; path = "../../Library/Developer/Xcode/DerivedData/bill24Sdk-ciehuuafnvecudenxueryyzzfsyj/Build/Products/Debug-iphoneos/bill24Sdk.framework"; sourceTree = "<group>"; };
 		B1E0510527324F0400F75E87 /* testproject1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testproject1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E0510827324F0400F75E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1E0510A27324F0400F75E87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		B1E0512527324F0500F75E87 /* testproject1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testproject1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E0512927324F0500F75E87 /* testproject1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testproject1UITests.swift; sourceTree = "<group>"; };
 		B1E0512B27324F0500F75E87 /* testproject1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testproject1UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B1E5098C279FE77A00D7EFA9 /* bill24Sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = bill24Sdk.framework; sourceTree = "<group>"; };
 		D6AD0CD2878F5F3053895D6C /* Pods-testproject1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1Tests.debug.xcconfig"; path = "Target Support Files/Pods-testproject1Tests/Pods-testproject1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDE9B9DA7D080017E0EDE404 /* Pods_testproject1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testproject1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3780166E130D16B732D6F9 /* Pods-testproject1-testproject1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1-testproject1UITests.debug.xcconfig"; path = "Target Support Files/Pods-testproject1-testproject1UITests/Pods-testproject1-testproject1UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1E5098E279FE78100D7EFA9 /* bill24Sdk.framework in Frameworks */,
+				B1CD6A3227AB85660043229A /* bill24Sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +142,7 @@
 		B1E050FC27324F0400F75E87 = {
 			isa = PBXGroup;
 			children = (
-				B1E5098C279FE77A00D7EFA9 /* bill24Sdk.framework */,
+				B1CD6A3027AB85610043229A /* bill24Sdk.framework */,
 				B102D2DC276C744F00A785A8 /* encoder_decoder.playground */,
 				B1E0510727324F0400F75E87 /* testproject1 */,
 				B1E0511E27324F0500F75E87 /* testproject1Tests */,
@@ -504,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -567,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -623,8 +625,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9200C557499BF41F3C0C789 /* Pods-testproject1.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -662,8 +666,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 76F23741D5539C9A7EC865DE /* Pods-testproject1.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
