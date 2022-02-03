@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		7D440A42C4B67619D224D37C /* Pods_testproject1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04928A67391660F7E962571E /* Pods_testproject1Tests.framework */; };
 		AE7FF495C333B467E01749EF /* Pods_testproject1_testproject1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562F8FDCD601ADB707DE1616 /* Pods_testproject1_testproject1UITests.framework */; };
-		B173F28927ABCD500079CA7A /* bill24Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B173F28727ABCD4B0079CA7A /* bill24Sdk.framework */; platformFilter = ios; };
-		B173F28A27ABCD500079CA7A /* bill24Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B173F28727ABCD4B0079CA7A /* bill24Sdk.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B199477527548C2D008491AD /* paymentSucceed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B199477427548C2D008491AD /* paymentSucceed.storyboard */; };
 		B199477727548C3C008491AD /* paymentSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B199477627548C3C008491AD /* paymentSucceed.swift */; };
+		B1BC9CFB27ABDD40004674BD /* bill24Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BC9CF927ABDD3B004674BD /* bill24Sdk.framework */; platformFilter = ios; };
+		B1BC9CFC27ABDD40004674BD /* bill24Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1BC9CF927ABDD3B004674BD /* bill24Sdk.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B1C9CCAC275080F10059FCD6 /* payLater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C9CCAB275080F10059FCD6 /* payLater.swift */; };
 		B1C9CCAE275080FF0059FCD6 /* payLater.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C9CCAD275080FF0059FCD6 /* payLater.storyboard */; };
 		B1E0510927324F0400F75E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0510827324F0400F75E87 /* AppDelegate.swift */; };
@@ -44,13 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B1E50964279FE3FD00D7EFA9 /* Embed Frameworks */ = {
+		B1BC9CF827ABDC71004674BD /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B173F28A27ABCD500079CA7A /* bill24Sdk.framework in Embed Frameworks */,
+				B1BC9CFC27ABDD40004674BD /* bill24Sdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,9 +65,9 @@
 		994E7615E27F489828408506 /* Pods-testproject1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1Tests.release.xcconfig"; path = "Target Support Files/Pods-testproject1Tests/Pods-testproject1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A9200C557499BF41F3C0C789 /* Pods-testproject1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1.debug.xcconfig"; path = "Target Support Files/Pods-testproject1/Pods-testproject1.debug.xcconfig"; sourceTree = "<group>"; };
 		B102D2DC276C744F00A785A8 /* encoder_decoder.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = encoder_decoder.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		B173F28727ABCD4B0079CA7A /* bill24Sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = bill24Sdk.framework; path = "../../Library/Developer/Xcode/DerivedData/bill24Sdk-ciehuuafnvecudenxueryyzzfsyj/Build/Products/Debug-iphoneos/bill24Sdk.framework"; sourceTree = "<group>"; };
 		B199477427548C2D008491AD /* paymentSucceed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = paymentSucceed.storyboard; sourceTree = "<group>"; };
 		B199477627548C3C008491AD /* paymentSucceed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentSucceed.swift; sourceTree = "<group>"; };
+		B1BC9CF927ABDD3B004674BD /* bill24Sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = bill24Sdk.framework; path = "../../Library/Developer/Xcode/DerivedData/bill24Sdk-ciehuuafnvecudenxueryyzzfsyj/Build/Products/Debug-iphonesimulator/bill24Sdk.framework"; sourceTree = "<group>"; };
 		B1C9CCAB275080F10059FCD6 /* payLater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payLater.swift; sourceTree = "<group>"; };
 		B1C9CCAD275080FF0059FCD6 /* payLater.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = payLater.storyboard; sourceTree = "<group>"; };
 		B1E0510527324F0400F75E87 /* testproject1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testproject1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B173F28927ABCD500079CA7A /* bill24Sdk.framework in Frameworks */,
+				B1BC9CFB27ABDD40004674BD /* bill24Sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +142,7 @@
 		B1E050FC27324F0400F75E87 = {
 			isa = PBXGroup;
 			children = (
-				B173F28727ABCD4B0079CA7A /* bill24Sdk.framework */,
+				B1BC9CF927ABDD3B004674BD /* bill24Sdk.framework */,
 				B102D2DC276C744F00A785A8 /* encoder_decoder.playground */,
 				B1E0510727324F0400F75E87 /* testproject1 */,
 				B1E0511E27324F0500F75E87 /* testproject1Tests */,
@@ -210,7 +210,7 @@
 				B1E0510227324F0400F75E87 /* Frameworks */,
 				B1E0510327324F0400F75E87 /* Resources */,
 				DC04DF80D396C9F956D8484C /* [CP] Embed Pods Frameworks */,
-				B1E50964279FE3FD00D7EFA9 /* Embed Frameworks */,
+				B1BC9CF827ABDC71004674BD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
