@@ -13,8 +13,8 @@
 		B199477727548C3C008491AD /* paymentSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B199477627548C3C008491AD /* paymentSucceed.swift */; };
 		B1C9CCAC275080F10059FCD6 /* payLater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C9CCAB275080F10059FCD6 /* payLater.swift */; };
 		B1C9CCAE275080FF0059FCD6 /* payLater.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C9CCAD275080FF0059FCD6 /* payLater.storyboard */; };
-		B1CD6A3227AB85660043229A /* bill24Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CD6A3027AB85610043229A /* bill24Sdk.framework */; platformFilter = ios; };
-		B1CD6A3327AB85660043229A /* bill24Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1CD6A3027AB85610043229A /* bill24Sdk.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1CD6A4427ABBDFC0043229A /* bill24Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CD6A4227ABBDF70043229A /* bill24Sdk.framework */; platformFilter = ios; };
+		B1CD6A4527ABBDFC0043229A /* bill24Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1CD6A4227ABBDF70043229A /* bill24Sdk.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B1E0510927324F0400F75E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0510827324F0400F75E87 /* AppDelegate.swift */; };
 		B1E0510B27324F0400F75E87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0510A27324F0400F75E87 /* SceneDelegate.swift */; };
 		B1E0510D27324F0400F75E87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0510C27324F0400F75E87 /* ViewController.swift */; };
@@ -50,7 +50,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B1CD6A3327AB85660043229A /* bill24Sdk.framework in Embed Frameworks */,
+				B1CD6A4527ABBDFC0043229A /* bill24Sdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,7 +69,7 @@
 		B199477627548C3C008491AD /* paymentSucceed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentSucceed.swift; sourceTree = "<group>"; };
 		B1C9CCAB275080F10059FCD6 /* payLater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payLater.swift; sourceTree = "<group>"; };
 		B1C9CCAD275080FF0059FCD6 /* payLater.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = payLater.storyboard; sourceTree = "<group>"; };
-		B1CD6A3027AB85610043229A /* bill24Sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = bill24Sdk.framework; path = "../../Library/Developer/Xcode/DerivedData/bill24Sdk-ciehuuafnvecudenxueryyzzfsyj/Build/Products/Debug-iphoneos/bill24Sdk.framework"; sourceTree = "<group>"; };
+		B1CD6A4227ABBDF70043229A /* bill24Sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = bill24Sdk.framework; path = "../../Library/Developer/Xcode/DerivedData/bill24Sdk-ciehuuafnvecudenxueryyzzfsyj/Build/Products/Debug-iphoneos/bill24Sdk.framework"; sourceTree = "<group>"; };
 		B1E0510527324F0400F75E87 /* testproject1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testproject1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E0510827324F0400F75E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1E0510A27324F0400F75E87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1CD6A3227AB85660043229A /* bill24Sdk.framework in Frameworks */,
+				B1CD6A4427ABBDFC0043229A /* bill24Sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +142,7 @@
 		B1E050FC27324F0400F75E87 = {
 			isa = PBXGroup;
 			children = (
-				B1CD6A3027AB85610043229A /* bill24Sdk.framework */,
+				B1CD6A4227ABBDF70043229A /* bill24Sdk.framework */,
 				B102D2DC276C744F00A785A8 /* encoder_decoder.playground */,
 				B1E0510727324F0400F75E87 /* testproject1 */,
 				B1E0511E27324F0500F75E87 /* testproject1Tests */,
