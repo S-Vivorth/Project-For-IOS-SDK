@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var language:String = "kh"
     
     // environment must be either "uat" or "prod" only
-    let environment:String = "prod"
+    let environment:String = "uat"
     
     // clientId can be obtained from bill24
     let clientId:String = "W/GkvceL7nCjOF/v+fu5MA+epIQMXMJedMeXvbvEn7I="
@@ -116,10 +116,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 (responseData) in
             let responded = responseData.data!
             let dict = self.convertToDictionary(text: String(data: responded, encoding: .utf8)!)
-            guard let session_id = ((dict!["data"] as! [String:Any])["session_id"] as? String) else {
+            guard let session_id = ((dict!["data"] as? [String:Any])?["session_id"] as? String) else {
                 return
             }
-            
+            print(session_id)
             // controller is current UIViewController
             // sessionID can be get from checkout api response above
             // clientID is unique id for biller
@@ -130,7 +130,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             // we use esacping closure to call these functions
             // you may refer the sample initPayLater and initSuccess functions in below section
             
-            BottomSheetAnimation().openSdk(controller: self,sessionID: session_id, cliendID: self.clientId,language: self.language,environment: self.environment){order_details in
+            PaymentSdk().openSdk(controller: self,sessionID: session_id, cliendID: self.clientId,language: self.language,environment: self.environment){order_details in
                 self.initPayLater(dict: order_details)
             } initPaySuccess: { order_details in
                 self.initSuccess(dict: order_details)
