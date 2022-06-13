@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2ECC2BEC83D2435DC12E206A /* Pods_testproject1_testproject1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2B9F7A572D8208E3B37061 /* Pods_testproject1_testproject1UITests.framework */; };
+		B152FF51285747D100541752 /* bill24Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B152FF4B2857478B00541752 /* bill24Sdk.framework */; };
+		B152FF52285747D100541752 /* bill24Sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B152FF4B2857478B00541752 /* bill24Sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B199477527548C2D008491AD /* paymentSucceed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B199477427548C2D008491AD /* paymentSucceed.storyboard */; };
 		B199477727548C3C008491AD /* paymentSucceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B199477627548C3C008491AD /* paymentSucceed.swift */; };
 		B1C9CCAC275080F10059FCD6 /* payLater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C9CCAB275080F10059FCD6 /* payLater.swift */; };
@@ -21,13 +23,25 @@
 		B1E0512027324F0500F75E87 /* testproject1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0511F27324F0500F75E87 /* testproject1Tests.swift */; };
 		B1E0512A27324F0500F75E87 /* testproject1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0512927324F0500F75E87 /* testproject1UITests.swift */; };
 		B1E0512C27324F0500F75E87 /* testproject1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0512B27324F0500F75E87 /* testproject1UITestsLaunchTests.swift */; };
-		B1FF6ED4285084D6002EB759 /* bill24Sdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1FF6ED2285084CF002EB759 /* bill24Sdk.xcframework */; };
-		B1FF6ED5285084D6002EB759 /* bill24Sdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B1FF6ED2285084CF002EB759 /* bill24Sdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF905DF73666038CE36ADD23 /* Pods_testproject1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA7941F1EAC9A672C4D267E /* Pods_testproject1.framework */; };
 		FC51207C0879592D016FB606 /* Pods_testproject1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7D8D78972AB6EE288F3CEA /* Pods_testproject1Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B152FF4A2857478B00541752 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B152FF452857478B00541752 /* bill24Sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B1E050A42732441300F75E87;
+			remoteInfo = bill24Sdk;
+		};
+		B152FF4C2857478B00541752 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B152FF452857478B00541752 /* bill24Sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B1E050AC2732441300F75E87;
+			remoteInfo = bill24SdkTests;
+		};
 		B1E0511C27324F0500F75E87 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B1E050FD27324F0400F75E87 /* Project object */;
@@ -51,7 +65,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B1FF6ED5285084D6002EB759 /* bill24Sdk.xcframework in Embed Frameworks */,
+				B152FF52285747D100541752 /* bill24Sdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +79,7 @@
 		72724E3FE63C9F2F143C9E22 /* Pods-testproject1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1.debug.xcconfig"; path = "Target Support Files/Pods-testproject1/Pods-testproject1.debug.xcconfig"; sourceTree = "<group>"; };
 		7AA7941F1EAC9A672C4D267E /* Pods_testproject1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testproject1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A355104286F8D3472BC394 /* Pods-testproject1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1.release.xcconfig"; path = "Target Support Files/Pods-testproject1/Pods-testproject1.release.xcconfig"; sourceTree = "<group>"; };
+		B152FF452857478B00541752 /* bill24Sdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = bill24Sdk.xcodeproj; path = ../testframe2/bill24Sdk.xcodeproj; sourceTree = "<group>"; };
 		B199477427548C2D008491AD /* paymentSucceed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = paymentSucceed.storyboard; sourceTree = "<group>"; };
 		B199477627548C3C008491AD /* paymentSucceed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentSucceed.swift; sourceTree = "<group>"; };
 		B1C9CCAB275080F10059FCD6 /* payLater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payLater.swift; sourceTree = "<group>"; };
@@ -82,7 +97,6 @@
 		B1E0512527324F0500F75E87 /* testproject1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testproject1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E0512927324F0500F75E87 /* testproject1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testproject1UITests.swift; sourceTree = "<group>"; };
 		B1E0512B27324F0500F75E87 /* testproject1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testproject1UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B1FF6ED2285084CF002EB759 /* bill24Sdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = bill24Sdk.xcframework; sourceTree = "<group>"; };
 		BF2B9F7A572D8208E3B37061 /* Pods_testproject1_testproject1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testproject1_testproject1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3DA513205B9FAA5621BB9A /* Pods-testproject1-testproject1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testproject1-testproject1UITests.release.xcconfig"; path = "Target Support Files/Pods-testproject1-testproject1UITests/Pods-testproject1-testproject1UITests.release.xcconfig"; sourceTree = "<group>"; };
 		FA7D8D78972AB6EE288F3CEA /* Pods_testproject1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testproject1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,8 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B152FF51285747D100541752 /* bill24Sdk.framework in Frameworks */,
 				BF905DF73666038CE36ADD23 /* Pods_testproject1.framework in Frameworks */,
-				B1FF6ED4285084D6002EB759 /* bill24Sdk.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,10 +144,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B152FF462857478B00541752 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B152FF4B2857478B00541752 /* bill24Sdk.framework */,
+				B152FF4D2857478B00541752 /* bill24SdkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B1E050FC27324F0400F75E87 = {
 			isa = PBXGroup;
 			children = (
-				B1FF6ED2285084CF002EB759 /* bill24Sdk.xcframework */,
+				B152FF452857478B00541752 /* bill24Sdk.xcodeproj */,
 				B1E0510727324F0400F75E87 /* testproject1 */,
 				B1E0511E27324F0500F75E87 /* testproject1Tests */,
 				B1E0512827324F0500F75E87 /* testproject1UITests */,
@@ -294,6 +317,12 @@
 			mainGroup = B1E050FC27324F0400F75E87;
 			productRefGroup = B1E0510627324F0400F75E87 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B152FF462857478B00541752 /* Products */;
+					ProjectRef = B152FF452857478B00541752 /* bill24Sdk.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B1E0510427324F0400F75E87 /* testproject1 */,
@@ -302,6 +331,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B152FF4B2857478B00541752 /* bill24Sdk.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = bill24Sdk.framework;
+			remoteRef = B152FF4A2857478B00541752 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B152FF4D2857478B00541752 /* bill24SdkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = bill24SdkTests.xctest;
+			remoteRef = B152FF4C2857478B00541752 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B1E0510327324F0400F75E87 /* Resources */ = {
@@ -630,10 +676,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 936EARQLW8;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -651,7 +698,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.6;
+				MARKETING_VERSION = 0.1.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = bill24.testproject1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -672,10 +719,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 936EARQLW8;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -693,7 +741,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.6;
+				MARKETING_VERSION = 0.1.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = bill24.testproject1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
